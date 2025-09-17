@@ -1,0 +1,333 @@
+---
+title: "Project Draft"
+subtitle: "by Sofia"
+output: html_document
+date: "2023-11-16"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE,
+                      warning = FALSE, error = TRUE, fig.height = 3)
+library(tidyverse)
+library(lubridate)
+source("../scripts/viridis.R")
+source("../scripts/ggprob.R")
+theme_set(theme_minimal())
+```
+
+
+
+
+
+
+```{r}
+library(readr)
+cereal = read.csv("/Users/sofiacaceres/Desktop/stats/stats240/project/cereal.csv")
+```
+
+**Introduction**
+
+
+The cereal industry in the United States uses over 400 million kilograms of sugar per year [3]. This is why we choose to focus on cereal data because we all love cereal and it contains various nutritional data. We were curious about what nutritional factors can make a cereal more popular in stores and by ranking, so we decided to look into data specifying the components and amounts of macronutrients contained in each cereal. In this project we plan to answer the question of: How sugar affects a cereal's popularity among consumers? We hypothesized that cereal with the most amount of sugar would be on the third shelf in the grocery store. We find in our analysis strong evidence that the sugar content of cereal shows a strong correlation to shelf height placement as opposed to random placement. 
+
+
+**Background**
+
+
+
+  Cereals, an indispensable breakfast choice in our daily life, derive their name from Ceres, the ancient Roman goddess of agriculture. In the United States, about 50% of people start their day with cereals every morning. Cereals are not just a delicious option but also a rich source of fiber, crucial for maintaining good health.
+
+  Our primary purpose is to provide insights into the nutritional composition of commonly consumed breakfast cereals. This can enable various analyses, such as understanding the nutritional value and ingredients of these cereals, potentially impacting dietary choices and health considerations. 
+
+  The impact of shelf placement on cereal products is significant, especially in terms of visibility to consumers and their purchasing decisions. Products placed at eye level (level 2&3) are more likely to be noticed by adults, while lower shelves (level 1) attract children's attention, due to human visual habits and attention distribution. Marketing strategies for cereals often involve placing sweet cereals for kids on lower shelves and healthier options at adult eye level. Therefore, consumer choices are greatly influenced by shelf placement, as more visible products tend to spark more interest.
+  
+  However, most customers surveyed supported shelf placement as a strategy (265, 88%) but noted brand preferences and price were more salient determinants of purchases.
+
+  The "80 Cereals" dataset contains comprehensive information on 80 different cereal products from seven manufacturers, including **American Home Food Products**, **General Mills**, **Kellogg's**, **Nabisco**, **Post**, **Quaker Oats**, and **Ralston Purina**. This dataset includes various nutritional and other relevant data points for each cereal, such as:
+
+- **Name**: Name of the cereal.
+- **Manufacturer (mfr)**: The company that produces the cereal, coded with letters representing different manufacturers.
+- **Type**: Whether the cereal is cold or hot.
+- **Calories**: Calories per serving.
+- **Protein**: Grams of protein per serving.
+- **Fat**: Grams of fat per serving.
+- **Sodium**: Milligrams of sodium per serving.
+- **Fiber**: Grams of dietary fiber per serving.
+- **Carbohydrates (carbo)**: Grams of complex carbohydrates per serving.
+- **Sugars**: Grams of sugars per serving.
+- **Potassium (potass)**: Milligrams of potassium per serving.
+- **Vitamins**: Vitamins and minerals content, indicated as 0, 25, or 100, representing the typical percentage of FDA recommended.
+- **Shelf**: Display shelf number (1, 2, or 3, counting from the floor).
+- **Weight**: Weight in ounces of one serving.
+- **Cups**: Number of cups in one serving.
+- **Rating**: A rating of the cereals, possibly from Consumer Reports.
+
+  The dataset provides valuable insights into the nutritional content of popular breakfast cereals, enabling analyses regarding health, dietary choices, and consumer preferences. The data was collected by the Section of Statistical Graphics, when they sponsored a special exposition to make the data set availible to the public. All of the data collected is based on the information availible on the F&DA food label, as well as nutrition information released by the cereal companies.
+
+  A single row of the data set represents all of the data available for that specific type and brand of cereal in the data set. It represents the cereal’s profile, both considering nutrients and popularity.
+
+Manufacturers are represented by their first initial: <br>
+A = American Home Food Products <br>
+G = General Mills <br>
+K = Kelloggs <br> 
+N = Nabisco <br> 
+P = Post <br>
+Q = Quaker Oats <br>
+R = Ralston Purina
+
+  For the rest of the report, the intention would be to analyze this data to draw conclusions about cereal nutrition and its implications on health and consumer choices. This include exploring correlations between different nutritional factors and the overall rating, investigating trends among different manufacturers, and identifying any unusual factors that could affect interpretation, such as outliers or anomalies in the data.
+
+
+
+**This graph shows us how the range of the different ratings for each box of cereal.**
+
+```{r}
+
+ggplot(cereal, aes(x = rating)) + geom_boxplot(col = "pink", fill = "lightblue") + 
+  labs(title = "Average Ratings of Cereals",
+       x = "Rating")
+
+```
+
+**This graph gives a solid representation of our population of cereals' sugar content observed by cereal rating.**
+
+```{r}
+
+ggplot(cereal, aes(x = sugars, group = sugars, fill = sugars)) + geom_bar() + 
+  labs(title = "Average Ratings of Cereals by Sugar",
+       x = "Rating",
+       y = "Sugars")
+
+```
+
+**This graph shows us a look into how the shelf height of a cereal box's placement corresponds with the rating of the cereal.**
+
+```{r}
+
+summary = cereal %>% 
+  group_by(mfr) %>%
+  summarize(n = n(),
+            avg_sugar = mean(sum(sugars))/n, 
+            avg_rating = mean(sum(rating))/n,
+            avg_shelf_height = mean(sum(shelf))/n,
+            shelf = shelf) %>%
+  ungroup(mfr) %>%
+  group_by(shelf) %>%
+  arrange(desc(avg_sugar))
+
+ggplot(cereal, 
+       aes(x = shelf, y = rating, 
+           group = shelf, fill = shelf)) + 
+  geom_boxplot() + 
+  labs(x = "Shelf Height", y = "Rating", title = "Shelf Height VS Rating of Cereal")
+
+
+```
+
+**Here we can see the comparison of servings of sugar in a cereal box compared to its rating.**
+
+```{r}
+
+ggplot(cereal, aes(x=rating, y=sugars)) +
+  geom_point() +
+  geom_smooth() +
+  labs(x = "Rating", y = "Sugars", title = "Amount of Sugar VS Cereal Rating")
+
+```
+
+**Similarly, we see the amount of carbohydrates compared to the cereal rating in this graph.**
+
+```{r}
+
+ggplot(cereal, aes(x=rating, y = carbo)) +
+  geom_point() +
+  geom_smooth() +
+  labs(x = "Rating", y = "Carbohydrates", title = "Number of Carbs VS Cereal Rating")
+
+```
+
+**This graph compares the amount of protien in a cereal box to the cereal's overall rating.**
+
+```{r}
+
+ggplot(cereal, aes(x=protein, y = rating, fill = protein)) +
+  geom_col() +
+  labs(x = "Protein", y = "Rating", title = "Amount of Protein VS Cereal Rating")
+
+```
+
+**These graphs give us a closer look into the specifics of the data when it comes to each individual manufacturer.**
+
+**Here, we are comparing the average rating of a box of cereal by brand.**
+
+```{r}
+
+cereal$mfr = factor(cereal$mfr,
+                        levels = c('A', 'G', 'K', 'N', 'P', 'Q', 'R'),
+                        labels = c('American Home Food Products', 'General Mills',
+                                   'Kelloggs', 'Nabisco', 'Post', 'Quaker Oats',
+                                   'Ralston Purina'))
+
+mean_ratings = cereal %>%
+  group_by(mfr) %>%
+  summarise(mean_rating = mean(rating),
+            mean_sugar = mean(sugars))
+
+ggplot(mean_ratings, aes(x=mfr, y=mean_rating, fill=mfr)) +
+  geom_bar(stat='identity') +
+  theme_minimal() +
+  labs(title='Mean Consumer Ratings of Cereal by Manufacturer',
+       x='Manufacturer',
+       y='Mean Rating') +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+
+```
+
+**Similarly, here we can compare the mean amount of sugar by brand of cereal**
+
+```{r} 
+
+ggplot(mean_ratings, aes(x=mfr, y=mean_sugar, fill=mfr)) +
+  geom_bar(stat='identity') +
+  theme_minimal() +
+  labs(title='Mean Sugars of Cereal by Manufacturer',
+       x='Manufacturer',
+       y='Mean Rating')  
+
+```
+
+
+
+**Analysis**
+
+```{r}
+
+cereal_sum = cereal %>%
+  group_by(shelf) %>%
+  mutate(mfr = case_when(mfr == "A" ~ "American Home Food Products", 
+                         mfr == "G" ~ "General Mills",
+                         mfr == "K" ~ "Kelloggs",
+                         mfr == "N" ~ "Nabisco",
+                         mfr == "P" ~ "Post",
+                         mfr == "Q" ~ "Quaker Oats",
+                         mfr == "R" ~ "Ralston Purina")) %>%
+  summarize(n = n(),
+            mean = mean(sugars),
+            sd = sd(sugars))
+
+cereal_plot = cereal %>% group_by(shelf) %>%
+  summarise(shelf = shelf,
+            sugars = sugars)
+
+ggplot(cereal_plot, aes(x = shelf, y = sugars, fill = shelf, group = shelf)) + 
+  geom_boxplot() + 
+  geom_point(position = position_jitter(width=0.4, height=0)) + 
+  theme_minimal() +
+  labs(x = "Shelf Height", y = "Sugar in Grams", title = "Cereal Sugar Content by Shelf Height")
+
+x = cereal_plot %>% 
+  filter(shelf == 1 | shelf == 3) %>%
+  pull(sugars)
+
+y = cereal_plot %>%
+  filter(shelf == 2) %>%
+  pull(sugars)
+
+t_test = t.test(y,x)
+  
+dof = 36.613 #t.test(x, y)$parameter
+mean_x=mean(x)
+s_x = sd(x)
+n_x = length(x)
+
+mean_y = mean(y)
+s_y = sd(y) 
+n_y = length(y)
+
+ci = mean_x - mean_y + c(-1,1)*qt(0.975, dof)*sqrt(s_x^2/n_x + s_y^2/n_y)
+ci
+
+## t.test(x, y, var.equal = TRUE) #assumes equal variances
+## ci #does not assume equal variances
+
+## The results of the t-test indicate that the average sugar content of cereals on shelf 2 is significantly higher than the average sugar content of cereals on shelves 1 and 3, which is in line with the graphical display of the data.
+
+## These results suggest that the shelf height of cereals with more sugar is higher than the average sugar content of cereals across all shelf heights. This information can be used by marketers and businesses to design marketing strategies aimed at targeting customers who prefer cereals with a higher sugar content.
+
+welch_df = function(x, y)
+{
+  sx = sd(x)
+  sy = sd(y)
+  nx = length(x)
+  ny = length(y)
+  
+  df = (sx^2/nx + sy^2/ny)^2 / (sx^4/(nx^2*(nx-1)) + sy^4/(ny^2*(ny-1)))
+  
+  return ( df )
+}
+```
+
+- State Hypotheses
+$H_0: \mu_1 = \mu_2$    
+$H_a: \mu_1 \neq \mu_2$
+
+- Test statistic
+$t = \frac{\bar{x} - \bar{y}}{\text{SE}(\bar{x} - \bar{y})}$
+
+```{r}
+
+t.test(x,y)
+
+## manual
+dof = 36.613 #t.test(x, y)$parameter
+n_x = length(x)
+n_y = length(y)
+se = sqrt(var(x)/n_x + var(y)/n_y)
+tstat = (mean(x) - mean(y)) / se
+tstat
+pvalue = 2*pt(-abs(tstat), dof) 
+pvalue
+t.test(x,y)$p.value
+
+```
+
+
+
+  In order to analyze our cereal data to properly answer our question, we chose to do an Inference on Two Means style model. We chose this in order to properly determine which shelf had the higher content of sugar, regardless of the number of boxes on each shelf.
+  
+  After running the analysis, we are able to say that we are We are 95% confident that the mean sugar amount of cereal among the 2nd shelf height is between 5.64 and 9.62 grams greater than the mean sugar amount of cereals on shelves 1 and 3.
+
+  We can also conclude that there is very strong evidence that the mean sugar content of cereals on the 2nd shelf height is larger than the mean sugar content of the other two shelves in the study. We know this by the results of our two-sided t-test (0.0006264527 is our p value < 0.05)
+
+
+**Discussion**
+
+  In the very beginning of our exploration we made various graphs to assess the different nutrients and how it plays into their ranking. After exploring the data with nutrients such as carbohydrates and protein we determined a significant impact in the amount of sugar and the ranking of the cereal. 
+  
+  In order to draw conclusions about a cereal's popularity we compared the average consumer ranking to what shelf the cereal can be found on at the grocery store. We found that shelf 2 has the highest ranking among consumers. We then compared the sum of sugar on each shelf to assess which shelf contains the most sugar. Putting these two assessments together, we found that shelf 3 had the highest amount of sugar, but shelf 2 has the highest ranking. This proves our thesis statement incorrect as the highest amount of sugar does not correlate to the most popular sugar. Findings also showed that cereals with lower amounts of sugar received a higher ranking among consumers and made its way to Shelf 2. 
+  
+  There are two shortcomings in our data set. The first is that this data set has not been updated in 6 years. As time progresses, Americans have proved to increase their daily calorie intake and their daily calories from sugar. In the past 6 years, as sugary calorie intake has increased the consumer ranking of sugary cereals could have increased as well[5]. Another shortcoming is the exclusion of certain cereal brands. For example, Sofia's favorite cereal is the Reeses Puffs Breakfast cereal which is not included in the data. She claims that this is the only sugary cereals she purchases and lack thereof in the data can yield inaccurate results.
+  
+  New questions for this cereal data set can include focusing on different nutrients. We could look into how the amount of vitamins or sodium can affect a cereal's popularity among consumers. 
+  
+  We can approach a new method to answer this same question in two different ways: finding a more current and accurate dataset, or changing the method in which we draw our statistical conclusions. We can do this in a very similar way to how we originally analyzed our data: through a numerical summary, calculating a confidence interval, modeling, and interpreting our data when the populations/subjects are of the same count. We can create a new data frame without evenly divided data and furthermore summarize it to later use in a manual confidence interval calculation. Furthermore, we can interpret and t-test these findings to confirm our hypothesis and draw a solid conclusion.
+  
+	In the past six years, many different and upcoming brands of cereal have been created. To refine our understanding of cereal popularity in correlation to levels of sugar we can include more popular sugary cereals that were not manufactured when this data set was created. When new children's movies come out, cereals are created with the characters on the box. Even the viral children's song “Baby Shark” has created a cereal that is now sold at Walmart, Sam's Club and other grocery stores. 
+	
+	In our exploration of cereal popularity and its correlation with sugar content, we initially focused on analyzing various nutrients, particularly sugar, carbohydrates, and protein, to understand their impact on consumer rankings. Contrary to our initial hypothesis, we discovered that cereals with lower sugar content tend to receive higher rankings among consumers and are more likely to be found on Shelf 2 in grocery stores. Despite Shelf 3 having the highest sugar content, Shelf 2 remains the most popular among consumers. 
+
+
+
+**References**
+
+
+[1] - Cereal data was obtained from a comprehensive dataset available on Kaggle^[See the dataset at [Kaggle Cereal Dataset](https://www.kaggle.com/datasets/crawford/80-cereals/data)].
+
+[2] - Additional cereal data was referenced from the CMU dataset^[Details can be found at [CMU Dataset](https://lib.stat.cmu.edu/datasets/1993.expo/)].
+
+[3] - Historical information and interesting facts about cereals were gathered from a dedicated cereal history website^[More information available at [History of Cereals](http://www.historyofcereals.com/cereal-facts/interesting-facts-about-cereals/)].
+
+[4] - The effect of a shelf placement intervention on sales of healthier and less healthy breakfast cereals in supermarkets: A co-designed pilot study
+^[Science Direct [Shelf Placement](https://www.sciencedirect.com/science/article/pii/S0277953620305566)].
+
+[5] - Americans are consuming far more calories each day than is recommended (daily intake should be around 2,000 calories for women and 2,500 for men)^[Business Insider [Average American Calorie Intake](https://www.businessinsider.com/daily-calories-americans-eat-increase-2016-07#daily-calories-from-sugar-and-artificial-sweeteners-has-also-risen-by-almost-100-3)].
