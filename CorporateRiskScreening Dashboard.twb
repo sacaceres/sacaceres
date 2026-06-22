@@ -1,0 +1,2324 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0512.1636                               -->
+<workbook original-version='18.1' source-build='2026.1.2 (20261.26.0512.1636)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='fundamentals' inline='true' name='federated.09hy2r017sfnbb1dl7khf1peyj8r' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='fundamentals' name='textscan.03oon160ziq0xq1ajccvj0mdx0oi'>
+            <connection class='textscan' directory='/Users/sofiacaceres/Desktop/stats/credit-risk' filename='fundamentals.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.03oon160ziq0xq1ajccvj0mdx0oi' name='fundamentals.csv' table='[fundamentals#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Ticker Symbol' ordinal='1' />
+            <column datatype='date' name='Period Ending' ordinal='2' />
+            <column datatype='real' name='Accounts Payable' ordinal='3' />
+            <column datatype='real' name='Accounts Receivable' ordinal='4' />
+            <column datatype='real' name='Add&apos;l income/expense items' ordinal='5' />
+            <column datatype='real' name='After Tax ROE' ordinal='6' />
+            <column datatype='real' name='Capital Expenditures' ordinal='7' />
+            <column datatype='real' name='Capital Surplus' ordinal='8' />
+            <column datatype='real' name='Cash Ratio' ordinal='9' />
+            <column datatype='real' name='Cash and Cash Equivalents' ordinal='10' />
+            <column datatype='real' name='Changes in Inventories' ordinal='11' />
+            <column datatype='real' name='Common Stocks' ordinal='12' />
+            <column datatype='real' name='Cost of Revenue' ordinal='13' />
+            <column datatype='real' name='Current Ratio' ordinal='14' />
+            <column datatype='real' name='Deferred Asset Charges' ordinal='15' />
+            <column datatype='real' name='Deferred Liability Charges' ordinal='16' />
+            <column datatype='real' name='Depreciation' ordinal='17' />
+            <column datatype='real' name='Earnings Before Interest and Tax' ordinal='18' />
+            <column datatype='real' name='Earnings Before Tax' ordinal='19' />
+            <column datatype='real' name='Effect of Exchange Rate' ordinal='20' />
+            <column datatype='real' name='Equity Earnings/Loss Unconsolidated Subsidiary' ordinal='21' />
+            <column datatype='real' name='Fixed Assets' ordinal='22' />
+            <column datatype='real' name='Goodwill' ordinal='23' />
+            <column datatype='real' name='Gross Margin' ordinal='24' />
+            <column datatype='real' name='Gross Profit' ordinal='25' />
+            <column datatype='real' name='Income Tax' ordinal='26' />
+            <column datatype='real' name='Intangible Assets' ordinal='27' />
+            <column datatype='real' name='Interest Expense' ordinal='28' />
+            <column datatype='real' name='Inventory' ordinal='29' />
+            <column datatype='real' name='Investments' ordinal='30' />
+            <column datatype='real' name='Liabilities' ordinal='31' />
+            <column datatype='real' name='Long-Term Debt' ordinal='32' />
+            <column datatype='real' name='Long-Term Investments' ordinal='33' />
+            <column datatype='real' name='Minority Interest' ordinal='34' />
+            <column datatype='real' name='Misc. Stocks' ordinal='35' />
+            <column datatype='real' name='Net Borrowings' ordinal='36' />
+            <column datatype='real' name='Net Cash Flow' ordinal='37' />
+            <column datatype='real' name='Net Cash Flow-Operating' ordinal='38' />
+            <column datatype='real' name='Net Cash Flows-Financing' ordinal='39' />
+            <column datatype='real' name='Net Cash Flows-Investing' ordinal='40' />
+            <column datatype='real' name='Net Income' ordinal='41' />
+            <column datatype='real' name='Net Income Adjustments' ordinal='42' />
+            <column datatype='real' name='Net Income Applicable to Common Shareholders' ordinal='43' />
+            <column datatype='real' name='Net Income-Cont. Operations' ordinal='44' />
+            <column datatype='real' name='Net Receivables' ordinal='45' />
+            <column datatype='real' name='Non-Recurring Items' ordinal='46' />
+            <column datatype='real' name='Operating Income' ordinal='47' />
+            <column datatype='real' name='Operating Margin' ordinal='48' />
+            <column datatype='real' name='Other Assets' ordinal='49' />
+            <column datatype='real' name='Other Current Assets' ordinal='50' />
+            <column datatype='real' name='Other Current Liabilities' ordinal='51' />
+            <column datatype='real' name='Other Equity' ordinal='52' />
+            <column datatype='real' name='Other Financing Activities' ordinal='53' />
+            <column datatype='real' name='Other Investing Activities' ordinal='54' />
+            <column datatype='real' name='Other Liabilities' ordinal='55' />
+            <column datatype='real' name='Other Operating Activities' ordinal='56' />
+            <column datatype='real' name='Other Operating Items' ordinal='57' />
+            <column datatype='real' name='Pre-Tax Margin' ordinal='58' />
+            <column datatype='real' name='Pre-Tax ROE' ordinal='59' />
+            <column datatype='real' name='Profit Margin' ordinal='60' />
+            <column datatype='real' name='Quick Ratio' ordinal='61' />
+            <column datatype='real' name='Research and Development' ordinal='62' />
+            <column datatype='real' name='Retained Earnings' ordinal='63' />
+            <column datatype='real' name='Sale and Purchase of Stock' ordinal='64' />
+            <column datatype='real' name='Sales, General and Admin.' ordinal='65' />
+            <column datatype='real' name='Short-Term Debt / Current Portion of Long-Term Debt' ordinal='66' />
+            <column datatype='real' name='Short-Term Investments' ordinal='67' />
+            <column datatype='real' name='Total Assets' ordinal='68' />
+            <column datatype='real' name='Total Current Assets' ordinal='69' />
+            <column datatype='real' name='Total Current Liabilities' ordinal='70' />
+            <column datatype='real' name='Total Equity' ordinal='71' />
+            <column datatype='real' name='Total Liabilities' ordinal='72' />
+            <column datatype='real' name='Total Liabilities &amp; Equity' ordinal='73' />
+            <column datatype='real' name='Total Revenue' ordinal='74' />
+            <column datatype='real' name='Treasury Stock' ordinal='75' />
+            <column datatype='real' name='For Year' ordinal='76' />
+            <column datatype='real' name='Earnings Per Share' ordinal='77' />
+            <column datatype='real' name='Estimated Shares Outstanding' ordinal='78' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ticker Symbol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ticker Symbol]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Ticker Symbol</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period Ending</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Period Ending]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Period Ending</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accounts Payable</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Accounts Payable]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Accounts Payable</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accounts Receivable</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Accounts Receivable]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Accounts Receivable</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Add&apos;l income/expense items</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Add&apos;l income/expense items]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Add&apos;l income/expense items</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>After Tax ROE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[After Tax ROE]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>After Tax ROE</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Capital Expenditures</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Capital Expenditures]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Capital Expenditures</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Capital Surplus</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Capital Surplus]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Capital Surplus</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cash Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cash Ratio]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Cash Ratio</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cash and Cash Equivalents</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cash and Cash Equivalents]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Cash and Cash Equivalents</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Changes in Inventories</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Changes in Inventories]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Changes in Inventories</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Common Stocks</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Common Stocks]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Common Stocks</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost of Revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cost of Revenue]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Cost of Revenue</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Current Ratio]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Current Ratio</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deferred Asset Charges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Deferred Asset Charges]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Deferred Asset Charges</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deferred Liability Charges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Deferred Liability Charges]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Deferred Liability Charges</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Depreciation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Depreciation]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Depreciation</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Earnings Before Interest and Tax</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Earnings Before Interest and Tax]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Earnings Before Interest and Tax</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Earnings Before Tax</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Earnings Before Tax]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Earnings Before Tax</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Effect of Exchange Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Effect of Exchange Rate]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Effect of Exchange Rate</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Equity Earnings/Loss Unconsolidated Subsidiary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Equity Earnings/Loss Unconsolidated Subsidiary]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Equity Earnings/Loss Unconsolidated Subsidiary</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fixed Assets</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fixed Assets]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Fixed Assets</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Goodwill</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Goodwill]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Goodwill</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross Margin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gross Margin]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Gross Margin</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gross Profit]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Gross Profit</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income Tax</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Income Tax]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Income Tax</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Intangible Assets</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Intangible Assets]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Intangible Assets</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest Expense</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Interest Expense]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Interest Expense</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inventory</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Inventory]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Inventory</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Investments</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Investments]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Investments</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Liabilities</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Liabilities]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Liabilities</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Long-Term Debt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Long-Term Debt]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Long-Term Debt</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Long-Term Investments</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Long-Term Investments]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Long-Term Investments</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Minority Interest</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Minority Interest]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Minority Interest</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Misc. Stocks</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Misc. Stocks]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Misc. Stocks</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Borrowings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net Borrowings]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Net Borrowings</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Cash Flow</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net Cash Flow]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Net Cash Flow</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Cash Flow-Operating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net Cash Flow-Operating]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Net Cash Flow-Operating</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Cash Flows-Financing</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net Cash Flows-Financing]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Net Cash Flows-Financing</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Cash Flows-Investing</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net Cash Flows-Investing]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Net Cash Flows-Investing</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Income</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net Income]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Net Income</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Income Adjustments</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net Income Adjustments]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Net Income Adjustments</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Income Applicable to Common Shareholders</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net Income Applicable to Common Shareholders]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Net Income Applicable to Common Shareholders</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Income-Cont. Operations</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net Income-Cont. Operations]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Net Income-Cont. Operations</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Receivables</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net Receivables]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Net Receivables</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Non-Recurring Items</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Non-Recurring Items]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Non-Recurring Items</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating Income</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Operating Income]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Operating Income</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating Margin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Operating Margin]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Operating Margin</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Assets</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other Assets]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Other Assets</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Current Assets</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other Current Assets]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Other Current Assets</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Current Liabilities</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other Current Liabilities]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Other Current Liabilities</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Equity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other Equity]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Other Equity</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Financing Activities</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other Financing Activities]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Other Financing Activities</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Investing Activities</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other Investing Activities]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Other Investing Activities</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Liabilities</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other Liabilities]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Other Liabilities</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Operating Activities</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other Operating Activities]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Other Operating Activities</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Operating Items</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other Operating Items]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Other Operating Items</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pre-Tax Margin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pre-Tax Margin]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Pre-Tax Margin</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pre-Tax ROE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pre-Tax ROE]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Pre-Tax ROE</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit Margin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit Margin]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Profit Margin</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quick Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Quick Ratio]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Quick Ratio</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Research and Development</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Research and Development]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Research and Development</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Retained Earnings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Retained Earnings]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Retained Earnings</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sale and Purchase of Stock</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sale and Purchase of Stock]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Sale and Purchase of Stock</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales, General and Admin.</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales, General and Admin.]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Sales, General and Admin.</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Short-Term Debt / Current Portion of Long-Term Debt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Short-Term Debt / Current Portion of Long-Term Debt]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Short-Term Debt / Current Portion of Long-Term Debt</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Short-Term Investments</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Short-Term Investments]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Short-Term Investments</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Assets</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Assets]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Total Assets</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Current Assets</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Current Assets]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Total Current Assets</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Current Liabilities</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Current Liabilities]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Total Current Liabilities</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Equity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Equity]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Total Equity</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Liabilities</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Liabilities]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Total Liabilities</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Liabilities &amp; Equity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Liabilities &amp; Equity]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Total Liabilities &amp; Equity</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Revenue]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Total Revenue</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Treasury Stock</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Treasury Stock]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Treasury Stock</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>For Year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[For Year]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>For Year</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Earnings Per Share</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Earnings Per Share]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Earnings Per Share</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estimated Shares Outstanding</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Estimated Shares Outstanding]</local-name>
+            <parent-name>[fundamentals.csv]</parent-name>
+            <remote-alias>Estimated Shares Outstanding</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='CleanYear' datatype='integer' name='[Calculation_6268940537008128]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF FLOAT([For Year]) &gt;= 2000 AND FLOAT([For Year]) &lt;= 2100&#10;THEN INT(FLOAT([For Year]))&#10;END' />
+      </column>
+      <column caption='Current Ratio Num' datatype='real' name='[Calculation_6268940537675777]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT([Current Ratio]) / 100' />
+      </column>
+      <column caption='Liabilities to Assets' datatype='real' name='[Calculation_6268940537733122]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT([Total Liabilities]) / FLOAT([Total Assets])' />
+      </column>
+      <column caption='Risk Flag' datatype='integer' name='[Calculation_6268940537802755]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_6268940537675777] &lt; 1&#10;AND [Calculation_6268940537733122] &gt; 0.70&#10;AND FLOAT([Net Income]) &lt; 0&#10;AND [Calculation_6268940537008128] &gt;= 2000&#10;THEN 1&#10;ELSE 0&#10;END' />
+      </column>
+      <column datatype='real' name='[For Year]' role='dimension' type='quantitative' />
+      <column caption='fundamentals.csv' datatype='table' name='[__tableau_internal_object_id__].[fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='fundamentals.csv' id='fundamentals.csv_83AF0E5AD02E4DF8BCE726EA543165BF'>
+            <properties context=''>
+              <relation connection='textscan.03oon160ziq0xq1ajccvj0mdx0oi' name='fundamentals.csv' table='[fundamentals#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Ticker Symbol' ordinal='1' />
+                  <column datatype='date' name='Period Ending' ordinal='2' />
+                  <column datatype='real' name='Accounts Payable' ordinal='3' />
+                  <column datatype='real' name='Accounts Receivable' ordinal='4' />
+                  <column datatype='real' name='Add&apos;l income/expense items' ordinal='5' />
+                  <column datatype='real' name='After Tax ROE' ordinal='6' />
+                  <column datatype='real' name='Capital Expenditures' ordinal='7' />
+                  <column datatype='real' name='Capital Surplus' ordinal='8' />
+                  <column datatype='real' name='Cash Ratio' ordinal='9' />
+                  <column datatype='real' name='Cash and Cash Equivalents' ordinal='10' />
+                  <column datatype='real' name='Changes in Inventories' ordinal='11' />
+                  <column datatype='real' name='Common Stocks' ordinal='12' />
+                  <column datatype='real' name='Cost of Revenue' ordinal='13' />
+                  <column datatype='real' name='Current Ratio' ordinal='14' />
+                  <column datatype='real' name='Deferred Asset Charges' ordinal='15' />
+                  <column datatype='real' name='Deferred Liability Charges' ordinal='16' />
+                  <column datatype='real' name='Depreciation' ordinal='17' />
+                  <column datatype='real' name='Earnings Before Interest and Tax' ordinal='18' />
+                  <column datatype='real' name='Earnings Before Tax' ordinal='19' />
+                  <column datatype='real' name='Effect of Exchange Rate' ordinal='20' />
+                  <column datatype='real' name='Equity Earnings/Loss Unconsolidated Subsidiary' ordinal='21' />
+                  <column datatype='real' name='Fixed Assets' ordinal='22' />
+                  <column datatype='real' name='Goodwill' ordinal='23' />
+                  <column datatype='real' name='Gross Margin' ordinal='24' />
+                  <column datatype='real' name='Gross Profit' ordinal='25' />
+                  <column datatype='real' name='Income Tax' ordinal='26' />
+                  <column datatype='real' name='Intangible Assets' ordinal='27' />
+                  <column datatype='real' name='Interest Expense' ordinal='28' />
+                  <column datatype='real' name='Inventory' ordinal='29' />
+                  <column datatype='real' name='Investments' ordinal='30' />
+                  <column datatype='real' name='Liabilities' ordinal='31' />
+                  <column datatype='real' name='Long-Term Debt' ordinal='32' />
+                  <column datatype='real' name='Long-Term Investments' ordinal='33' />
+                  <column datatype='real' name='Minority Interest' ordinal='34' />
+                  <column datatype='real' name='Misc. Stocks' ordinal='35' />
+                  <column datatype='real' name='Net Borrowings' ordinal='36' />
+                  <column datatype='real' name='Net Cash Flow' ordinal='37' />
+                  <column datatype='real' name='Net Cash Flow-Operating' ordinal='38' />
+                  <column datatype='real' name='Net Cash Flows-Financing' ordinal='39' />
+                  <column datatype='real' name='Net Cash Flows-Investing' ordinal='40' />
+                  <column datatype='real' name='Net Income' ordinal='41' />
+                  <column datatype='real' name='Net Income Adjustments' ordinal='42' />
+                  <column datatype='real' name='Net Income Applicable to Common Shareholders' ordinal='43' />
+                  <column datatype='real' name='Net Income-Cont. Operations' ordinal='44' />
+                  <column datatype='real' name='Net Receivables' ordinal='45' />
+                  <column datatype='real' name='Non-Recurring Items' ordinal='46' />
+                  <column datatype='real' name='Operating Income' ordinal='47' />
+                  <column datatype='real' name='Operating Margin' ordinal='48' />
+                  <column datatype='real' name='Other Assets' ordinal='49' />
+                  <column datatype='real' name='Other Current Assets' ordinal='50' />
+                  <column datatype='real' name='Other Current Liabilities' ordinal='51' />
+                  <column datatype='real' name='Other Equity' ordinal='52' />
+                  <column datatype='real' name='Other Financing Activities' ordinal='53' />
+                  <column datatype='real' name='Other Investing Activities' ordinal='54' />
+                  <column datatype='real' name='Other Liabilities' ordinal='55' />
+                  <column datatype='real' name='Other Operating Activities' ordinal='56' />
+                  <column datatype='real' name='Other Operating Items' ordinal='57' />
+                  <column datatype='real' name='Pre-Tax Margin' ordinal='58' />
+                  <column datatype='real' name='Pre-Tax ROE' ordinal='59' />
+                  <column datatype='real' name='Profit Margin' ordinal='60' />
+                  <column datatype='real' name='Quick Ratio' ordinal='61' />
+                  <column datatype='real' name='Research and Development' ordinal='62' />
+                  <column datatype='real' name='Retained Earnings' ordinal='63' />
+                  <column datatype='real' name='Sale and Purchase of Stock' ordinal='64' />
+                  <column datatype='real' name='Sales, General and Admin.' ordinal='65' />
+                  <column datatype='real' name='Short-Term Debt / Current Portion of Long-Term Debt' ordinal='66' />
+                  <column datatype='real' name='Short-Term Investments' ordinal='67' />
+                  <column datatype='real' name='Total Assets' ordinal='68' />
+                  <column datatype='real' name='Total Current Assets' ordinal='69' />
+                  <column datatype='real' name='Total Current Liabilities' ordinal='70' />
+                  <column datatype='real' name='Total Equity' ordinal='71' />
+                  <column datatype='real' name='Total Liabilities' ordinal='72' />
+                  <column datatype='real' name='Total Liabilities &amp; Equity' ordinal='73' />
+                  <column datatype='real' name='Total Revenue' ordinal='74' />
+                  <column datatype='real' name='Treasury Stock' ordinal='75' />
+                  <column datatype='real' name='For Year' ordinal='76' />
+                  <column datatype='real' name='Earnings Per Share' ordinal='77' />
+                  <column datatype='real' name='Estimated Shares Outstanding' ordinal='78' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Repeated risk by Ticker'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fundamentals' name='federated.09hy2r017sfnbb1dl7khf1peyj8r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09hy2r017sfnbb1dl7khf1peyj8r'>
+            <column caption='CleanYear' datatype='integer' name='[Calculation_6268940537008128]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF FLOAT([For Year]) &gt;= 2000 AND FLOAT([For Year]) &lt;= 2100&#10;THEN INT(FLOAT([For Year]))&#10;END' />
+            </column>
+            <column caption='Current Ratio Num' datatype='real' name='[Calculation_6268940537675777]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT([Current Ratio]) / 100' />
+            </column>
+            <column caption='Liabilities to Assets' datatype='real' name='[Calculation_6268940537733122]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT([Total Liabilities]) / FLOAT([Total Assets])' />
+            </column>
+            <column caption='Risk Flag' datatype='integer' name='[Calculation_6268940537802755]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Calculation_6268940537675777] &lt; 1&#10;AND [Calculation_6268940537733122] &gt; 0.70&#10;AND FLOAT([Net Income]) &lt; 0&#10;AND [Calculation_6268940537008128] &gt;= 2000&#10;THEN 1&#10;ELSE 0&#10;END' />
+            </column>
+            <column datatype='real' name='[Current Ratio]' role='measure' type='quantitative' />
+            <column datatype='real' name='[For Year]' role='dimension' type='quantitative' />
+            <column datatype='real' name='[Net Income]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Ticker Symbol]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Total Assets]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Total Liabilities]' role='measure' type='quantitative' />
+            <column-instance column='[Ticker Symbol]' derivation='None' name='[none:Ticker Symbol:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_6268940537802755]' derivation='Sum' name='[sum:Calculation_6268940537802755:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.09hy2r017sfnbb1dl7khf1peyj8r].[sum:Calculation_6268940537802755:qk]' included-values='in-range'>
+            <min>1</min>
+          </filter>
+          <slices>
+            <column>[federated.09hy2r017sfnbb1dl7khf1peyj8r].[sum:Calculation_6268940537802755:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.09hy2r017sfnbb1dl7khf1peyj8r].[sum:Calculation_6268940537802755:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09hy2r017sfnbb1dl7khf1peyj8r].[none:Ticker Symbol:nk]</rows>
+        <cols>[federated.09hy2r017sfnbb1dl7khf1peyj8r].[sum:Calculation_6268940537802755:qk]</cols>
+      </table>
+      <simple-id uuid='{3513A73D-3EF4-4208-B1C0-0860D7CE54F0}' />
+    </worksheet>
+    <worksheet name='Risky Company-Years by Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fundamentals' name='federated.09hy2r017sfnbb1dl7khf1peyj8r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09hy2r017sfnbb1dl7khf1peyj8r'>
+            <column caption='CleanYear' datatype='integer' name='[Calculation_6268940537008128]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF FLOAT([For Year]) &gt;= 2000 AND FLOAT([For Year]) &lt;= 2100&#10;THEN INT(FLOAT([For Year]))&#10;END' />
+            </column>
+            <column caption='Current Ratio Num' datatype='real' name='[Calculation_6268940537675777]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT([Current Ratio]) / 100' />
+            </column>
+            <column caption='Liabilities to Assets' datatype='real' name='[Calculation_6268940537733122]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT([Total Liabilities]) / FLOAT([Total Assets])' />
+            </column>
+            <column caption='Risk Flag' datatype='integer' name='[Calculation_6268940537802755]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Calculation_6268940537675777] &lt; 1&#10;AND [Calculation_6268940537733122] &gt; 0.70&#10;AND FLOAT([Net Income]) &lt; 0&#10;AND [Calculation_6268940537008128] &gt;= 2000&#10;THEN 1&#10;ELSE 0&#10;END' />
+            </column>
+            <column datatype='real' name='[Current Ratio]' role='measure' type='quantitative' />
+            <column datatype='real' name='[For Year]' role='dimension' type='quantitative' />
+            <column datatype='real' name='[Net Income]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Total Assets]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Total Liabilities]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_6268940537008128]' derivation='None' name='[none:Calculation_6268940537008128:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_6268940537802755]' derivation='Sum' name='[sum:Calculation_6268940537802755:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09hy2r017sfnbb1dl7khf1peyj8r].[none:Calculation_6268940537008128:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_6268940537008128:ok]' />
+              <groupfilter function='member' level='[none:Calculation_6268940537008128:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09hy2r017sfnbb1dl7khf1peyj8r].[none:Calculation_6268940537008128:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09hy2r017sfnbb1dl7khf1peyj8r].[sum:Calculation_6268940537802755:qk]</rows>
+        <cols>[federated.09hy2r017sfnbb1dl7khf1peyj8r].[none:Calculation_6268940537008128:ok]</cols>
+      </table>
+      <simple-id uuid='{19AE3A13-384B-4A80-9E61-AA88328C67A0}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Corporate-Financial-Risk'>
+      <style />
+      <size maxheight='900' maxwidth='1200' minheight='900' minwidth='1200' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='80018' id='3' name='Risky Company-Years by Year' w='49333' x='50000' y='19093'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='6001' id='6' type-v2='text' w='98666' x='667' y='889'>
+            <formatted-text>
+              <run bold='true' fontsize='24'>Corporate Financial Risk Screening Dashboard</run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='80018' id='7' name='Repeated risk by Ticker' w='49333' x='667' y='19093'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='4601' id='8' type-v2='text' w='98666' x='667' y='12191'>
+            <formatted-text>
+              <run bold='true' fontsize='18'>1,607</run>
+              <run fontcolor='#666666' fontsize='11'> Cleaned Rows     </run>
+              <run bold='true' fontsize='18'>439</run>
+              <run fontcolor='#666666' fontsize='11'> Companies     </run>
+              <run bold='true' fontsize='18'>2015</run>
+              <run fontcolor='#666666' fontsize='11'> Highest-Risk Year</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='5201' id='9' type-v2='text' w='98666' x='667' y='6890'>
+            <formatted-text>
+              <run fontsize='11'>Early-warning screening dashboard for financially stressed firms based on liquidity, leverage, and earnings. </run>
+              <run bold='true' fontcolor='#1f3a56' fontsize='12'>Key takeaway:</run>
+              <run fontcolor='#1f3a56' fontsize='12'> 2015 had the highest concentration of risky company-years, and CHTR was the only firm flagged in three separate years.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='16' param='vert' type-v2='layout-flow' w='98666' x='667' y='889'>
+                <zone forceUpdate='true' h='6001' id='6' type-v2='text' w='98666' x='667' y='889'>
+                  <formatted-text>
+                    <run bold='true' fontsize='24'>Corporate Financial Risk Screening Dashboard</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5201' id='9' type-v2='text' w='98666' x='667' y='6890'>
+                  <formatted-text>
+                    <run fontsize='11'>Early-warning screening dashboard for financially stressed firms based on liquidity, leverage, and earnings. </run>
+                    <run bold='true' fontcolor='#1f3a56' fontsize='12'>Key takeaway:</run>
+                    <run fontcolor='#1f3a56' fontsize='12'> 2015 had the highest concentration of risky company-years, and CHTR was the only firm flagged in three separate years.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4601' id='8' type-v2='text' w='98666' x='667' y='12191'>
+                  <formatted-text>
+                    <run bold='true' fontsize='18'>1,607</run>
+                    <run fontcolor='#666666' fontsize='11'> Cleaned Rows     </run>
+                    <run bold='true' fontsize='18'>439</run>
+                    <run fontcolor='#666666' fontsize='11'> Companies     </run>
+                    <run bold='true' fontsize='18'>2015</run>
+                    <run fontcolor='#666666' fontsize='11'> Highest-Risk Year</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='80018' id='7' is-fixed='true' name='Repeated risk by Ticker' w='49333' x='667' y='19093'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='80018' id='3' is-fixed='true' name='Risky Company-Years by Year' w='49333' x='50000' y='19093'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3605C9F8-2306-45DC-9FDF-0B278CF7789D}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Risky Company-Years by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{78A675C1-CFE0-4074-A9F2-02AAB056C0FB}' />
+    </window>
+    <window class='worksheet' name='Repeated risk by Ticker'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09hy2r017sfnbb1dl7khf1peyj8r].[none:Ticker Symbol:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{23A5D816-3840-45B6-B042-73AB2A5F3813}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Corporate-Financial-Risk'>
+      <viewpoints>
+        <viewpoint name='Repeated risk by Ticker'>
+          <zoom type='fit-height' />
+        </viewpoint>
+        <viewpoint name='Risky Company-Years by Year'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.09hy2r017sfnbb1dl7khf1peyj8r].[none:Calculation_6268940537008128:ok]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.09hy2r017sfnbb1dl7khf1peyj8r].[sum:Calculation_6268940537802755:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.09hy2r017sfnbb1dl7khf1peyj8r].[none:Calculation_6268940537008128:ok]</field>
+                    <field>[federated.09hy2r017sfnbb1dl7khf1peyj8r].[sum:Calculation_6268940537802755:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>2015</value>
+                  <value>6</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{4132BA69-1E33-45F1-B020-C7CF95B9C2AB}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Corporate-Financial-Risk' width='384'>
+      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
+      b/D666+zbt26LnUuIdFX6co/ted25np3c3n69OmcP3+e5557Dj8/PzQajx88+QAAFm5JREFU
+      DZ988glPP/00q1atIiIigsLCQt58881uZW2/YLPlL/V6PW+++Sb5+fncunWry7eV2tfz0EMP
+      8corr7Bq1ape6cvCihUrQLhDTCaToFarBZPJJAiCIFRWVgpvvfWWoFarhdbW1k7lGxsbhcbG
+      RvGz2WwWysvLBa1W26lsU1OToFaru2zLQl1dnVW520Gj0QiVlZW9Kms2mwWTySRoNBqbfXv5
+      5ZcFjUZzR3IIgiDo9Xqhtra2x3Jd6UFCQqJrbmeu9zSXm5qaBI1GI5jNZvFaa2urcOPGDUGv
+      1/dapu78ZVNTk3Dr1i2rNrojLy9PWL9+fa/bbk+3O4DusLOzw8fHp1OE6XjNgqura6eyXW2X
+      XFxccHFx6bYtoNMrXbeDt7d3r8vKZDJkMlmne27dusW6desYM2bMbdX3/9q7l9iorsOP47+Z
+      8XjMDH5hDIZgHBPz+PNyYx5tY9FgYkJCl1aVRHSJqqhSF91VSruLon/FolK6KooEandFVgVR
+      IsAYJzEQUZoEiqhxbR7GGAy2x8bj17zu/S8Qo5CGEviTOffO+X42MMaWf2PG9zfn3HvP+aZw
+      OKyKiorHft6jfg4AHu27/G5+19/lbx6bpPvnAR5civkkHnW8/Lbv8Sh/+ctf1N3dnbtY5Ikz
+      uO43rnfEd+a6rrLZbO6mCgD+5Nff5XQ6raKioqc+F0gBAIClWAwOACxFAQCApSgAALCUv854
+      fM2Dm6dsY+vzlu7fvu+3k3TPis3PPR+v+QfLI0v//SbSQuPbV5St565tLgA/XqXxrNj83PPx
+      mg+Hw5Lu/5y/ecdsIbPzSAIA8O8IAACexujoqC5evCjHcZROp/Xaa6+ZjmQMIwAAVlm4cKFa
+      WlpUUVGhDRs2mI5jlG9HAO98cFI9A/7Yl/NZO/zem6YjAL7muq6Ghoa0adMm01GMYgQAwDr/
+      /Oc/tXHjRtMxjKMAAFinpKTkqRZwKzQUAADrsJfGfRQAAFiKAgAAS1EAAGApCgAALEUBAICl
+      KAAAsBQFAACWogB8zHVdffbZZ6ZjAPApTxRAOp3WH//4R2UymW99/Pnnn5uM51l//etfdeDA
+      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
+    </thumbnail>
+    <thumbnail height='368' name='Repeated risk by Ticker' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAFwCAYAAACxVaymAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO3de1BUV54H8G83r6Z5tdKAtCCIvFRAuxGILnkYk9FELXWs6LBmfORRO7Wp
+      2U2mUpOpZLfWrcnW7Nb8saayccxMUtFoZoKbiKvR+Ii4msW4SovyUGgEVLTlJdA8GpuGvvuH
+      1b220DyahrZzvp8qa4Z7zj33d2um+ss59/RFJkmSBCIiEo7c2wUQEZF3MACIiATFACAiEhQD
+      gIhIUAwAIiJBMQCIiATFACAiEhQDgIhIUAwAIiJBMQCIiATFACAiEhQDgIhIUAwAIiJBMQCI
+      iATFACAiEhQDgHya2Wz2dglEPosBQEQkKAYAEZGgGABERIJiABARCYoBQEQkKH9vF0A0UWve
+      /dLbJRD5JM4AiIgExQAgIhIUA4CISFAMACIiQTEAiIgExV1AgjMYDKisrAQA6HQ6JCYmTur5
+      RqMRzc3NSE1NRUhIiDslE5GHMAAEd+zYMVRVVQEA2tvb8dprr03q+efOncPJkyfx9ttvIyUl
+      xb2iicgjGAAC6+3txbVr15CamorOzk6Ul5fDarUiICBgSs4nIu/iMwCBXb58GTabDYsWLUJ2
+      djYsFgsqKiqm7Hwi8i4GgMBKS0shk8mg1WqRnZ0NANDr9VN2PhF5F5eABNXT04Pq6mqkpKQg
+      PDwc4eHhiIqKQkVFBfr7+xEYGDip5xOR93EGIKiysjLYbDbodDrHMZ1OB4vF4tjVM5nnE5H3
+      MQAEpdfrIZPJnD7A7cs4paWlk34+EXkfA0BAPT09qKmpwZw5cxAREeE4npCQgMjISMcyzmSd
+      T0SPBwaAgIZbvrHT6XTo7+8fcTfPRM8noscDA0BA9t07rj7A7X0m63wiejxwF5Bguru7YTAY
+      4O/vj8OHDw9plyQJAFBZWQmLxYKgoCCPnk9Ejw8GgGDsyzc2mw0lJSUu+9mXcRYtWuTR84no
+      8cEAEIz9i1rbt2/HtGnThu3T0NCAHTt2QK/XD/kAn+j5RPT4YAAIxL58k5iYiNjYWJf90tPT
+      oVKpUFFR4bSMM9HziejxwofAArEv39j367tif72D1WpFeXm5x84noscLZwACse/MGW73zqOy
+      s7Nx+vRp6PV65OTkeOT8hxUVFSE0NHTYc9euXQuNRjPqNYhoYhgAgujr64PBYMCsWbOgVqtH
+      7Z+cnIzw8HBUVlZicHAQ/f39Ezrfz88PACCXP5h01tXVuTw3Pz+fAUA0BWSSfd8ekQ8ym80o
+      eP+Qt8sg8kl8BkBEJCgGABGRoBgARESCYgAQEQmKAUBEJCjuAiKfZjaboVQqvV0GkU/iDICI
+      SFAMACIiQTEAiIgExQAgIhIUA4CISFAMACIiQTEAiIgExQAgIhIUA4CISFD8gzDk89a8+6W3
+      SyDySZwBEBEJigFARCQoBgARkaAYAEREgmIAEBEJiruABCRJEg4fPoyBgQEEBwfjhRdeGLG/
+      zWbDlStXhhyXy+UIDg5GREQEYmJixnz9gYEB3Lp1C/X19WhtbXWcn5mZicDAwHHfDxG5hwEg
+      oIaGBhw5csTxs06nG/ED3Gq1YteuXSOOOWPGDCxZsgTPPvssAgICXParqqrCJ598ArPZPKQt
+      ODgYBQUFyMvLG8NdENFEMQAEpNfrAQBPPvkkvv/+e5SWlmLlypWjnhcXF4fly5c7frZarejq
+      6sLdu3dx6dIlHDhwAHfu3MErr7wy7PnHjh3DwYMHIZPJ8NRTTyE9PR0ajQYmkwk1NTU4ffo0
+      jEajZ26SiEbFABCMJEnQ6/WIiIjA+vXr8cMPP4w5ACIiIpCbmzts209/+lP827/9G/73f/8X
+      K1asgEajcWqvq6tDUVERFAoFXn/9dWRkZDjaYmNjkZ6ejueffx7t7e0Tu0EiGjM+BBZMQ0MD
+      Ojo6oNVqERwcjPnz58NoNOLu3bsTGlelUuGZZ54BADQ2Ng5pLyoqAgBs3brV6cP/YUqlEnFx
+      cROqg4jGjgEgmNLSUgBAdnY2gAfr/8D/LwtNhCRJAIDBwUGn4waDAbW1tYiPj8fChQsnfB0i
+      8gwGgEAkScKlS5cQFhaGlJQUAMCCBQvg7+8/4QCwWCwoLS2FTCZDYmKiU1tDQwMAYNmyZZDJ
+      ZBO6DhF5DgNAIPX19Y7lH/sHcXBwMObOnev2MpAkSaitrcWOHTvQ2NiIDRs2DFn/b25uBoAh
+      x4nIu/gQWCD23/Ltyz92Op0OFRUVKC0txerVq12ef+vWLRQWFgIAzGYzurq60NTUhPb2doSF
+      hWH9+vV49tlnh5zX0tICAIiOjvbUrRCRBzAABGHf/RMaGorU1FSntoULF2Lfvn3Q6/UjBkB3
+      dzeKi4uHbcvPz8f8+fNdnieXy6FQKNy/ASLyOAaAIOrq6tDZ2Yn8/HzI5c4rf0qlEunp6aiq
+      qoLRaHS5VJOamopXX30VwINv8/b09MBkMuHq1asoKSnBt99+izVr1uDFF190Om/69OloamqC
+      yWSCSqWanBskonFjAAjCvvxjNBrx+eefD2lvbW119HMVAAEBAU4f4Gq1GsCDB8lr1qzBRx99
+      hP/6r/9CVFQUcnJyHP2ioqIAAG1tbQwAoscIHwILwL77B3jwILikpGTIP/s6vbu7gZRKJTZs
+      2ADgweseHmYPgNraWndvgYgmAWcAArh+/To6OzvxxBNPoKCgwGW/P/zhD6iurh5xGWgk9vcJ
+      2cPELiMjA19//TVOnTqFZcuW8YVvRI8JzgAEYP+tPicnBwqFwuU/++4g+5fFxuvq1asAhm73
+      jI2NRW5uLrq7u3Hs2LEJ3AkReRID4EfOvvxjf9A7Eq1WC7lcPu5lIPs19u3bBwDIzMwc0mfl
+      ypXw8/PDkSNHsH//fse3hh8e4/LlyygrKxvXtYnIfVwC+pG7fv06TCYTnnjiCfj7j/w/t/0b
+      wjU1Nbh9+/aQ9/I0Njbi448/dvwsSRJMJhNaW1vR3d0NAFi6dCkWLFgwZOyYmBi89dZb+Pjj
+      j3Hq1CmUlZUhOTkZGo0GnZ2dMBgMMBqNWLFiBbRarQfunIhGwwD4kbP/IZdHv/zlSnZ2Nmpq
+      alBeXu4IALlcDplMhq6uLsfDZLuQkBBMmzYNaWlpWLZsGZKSklyOnZKSgvfeew+FhYW4fv06
+      Lly44Gjz9/eHVqvlhz/RFJJJj87FiaZIW1sbTCYTlEol1Gr1iH9IxhWz2YyC9w9NQnVEP36c
+      AZDXqNVqx3cJiGjq8SEwEZGgGABERIJiABARCYoBQEQkKO4CIp9mNpuhVCq9XQaRT+IMgIhI
+      UAwAIiJBMQCIiATFACAiEhQDgIhIUAwAIiJBMQCIiATFACAiEhQDgIhIUHwdNPm8Ne9+6e0S
+      iHwSZwBERIJiABARCYoBQEQkKAYAEZGg+BBYYAaDAZWVlQAAnU6HxMREl31tNhuuXLky5Lif
+      nx/UajWio6Ph7z+2/zsNDAzg1q1bqK+vR2trKyIiIhATE4PMzEwEBga6dS9ENH4MAIEdO3YM
+      VVVVAID29na89tprLvtarVbs2rXLZbtMJoNOp8PatWsRHR3tsl9VVRU++eQTmM3mIW3BwcEo
+      KChAXl7eOO6CiNzFABBUb28vrl27htTUVHR2dqK8vBxWqxUBAQEjnhcdHY3Vq1c7fjabzbh3
+      7x7Kysqg1+tRWVmJf/iHfxg2BI4dO4aDBw9CJpPhqaeeQnp6OjQaDUwmE2pqanD69GkYjUaP
+      3ysRDY8BIKjLly/DZrNh0aJF6OjowLfffouKigrodLoRz5s2bRpyc3OHHF+3bh2Kiopw4sQJ
+      fPbZZ3jnnXec2uvq6lBUVASFQoHXX38dGRkZjrbY2Fikp6fj+eefR3t7u2dukIhGxYfAgiot
+      LYVMJoNWq0V2djYAQK/Xuz2eXC7HunXrEBcXh/r6evT29jq1FxUVAQC2bt3q9OH/MKVSibi4
+      OLdrIKLxYQAIqKenB9XV1UhJSUF4eDji4+MRFRWFiooK9Pf3uz2uXC5HSkoKADgt5RgMBtTW
+      1iI+Ph4LFy6ccP1E5BkMAAGVlZXBZrM5LffodDpYLBbHriB32XcCDQ4OOo41NDQAAJYtWwaZ
+      TDah8YnIcxgAAtLr9Y5dO3b2ZaDS0tIJjX3z5k0AQHx8vONYc3MzAECj0UxobCLyLAaAYHp6
+      elBTU4M5c+YgIiLCcTwhIQGRkZETWgY6d+4cDAYDZs6ciZCQEMfxlpYWABhxeygRTT3uAhLM
+      cMs/djqdDidPnkRFRYVjRvAoi8XitL7f29uLe/fuobS0FBUVFfD398crr7zidE53dzfkcjkU
+      CoVnb4aIJoQBIBj77p+RAqC0tNRlANy4cQP//M//PGxbUlIS1q9fP2Qnz/Tp09HU1ASTyQSV
+      SjXxmyAij2AACKS7uxsGgwH+/v44fPjwkHZJkgAAlZWVsFgsCAoKGtInLCwM+fn5jp8DAwMR
+      FRWFmJgYzJo1a9jrRkVFAQDa2toYAESPEQaAQOzLPzabDSUlJS779ff3o6KiAosWLRrSptFo
+      sHbt2nFd1x4AtbW1SE5OHl/RRDRpGAACsX/Ra/v27Zg2bdqwfRoaGrBjxw7o9fphA8AdGRkZ
+      +Prrr3Hq1CksW7aML3wjekxwF5Ag7Ms/iYmJiI2NhUKhGPZfeno6VCoVKioqYLFYPHLt2NhY
+      5Obmoru7G8eOHfPImEQ0cQwAQdiXf1w93LWzvx7CarWivLzcY9dfuXIl/Pz8cOTIEezfv9/x
+      vMFOkiRcvnwZZWVlHrsmEY2MS0CCsH/Ba7SXvQEPvhR2+vRp6PV65OTkeOT6MTExeOutt/Dx
+      xx/j1KlTKCsrQ3JyMjQaDTo7O2EwGGA0GrFixQpotVqPXJOIRsYAEEBfXx8MBgNmzZoFtVo9
+      av/k5GSEh4ejsrISg4OD8PPzg1wuh0wmg5+fn9t1pKSk4L333kNhYSGuX7+OCxcuONr8/f2h
+      1Wr54U80hWTSo3NxoinS1tYGk8kEpVIJtVo96t8iGI7ZbEbB+4cmoTqiHz/OAMhr1Gr1mGYk
+      RDQ5+BCYiEhQDAAiIkExAIiIBMUAICISFHcBkU8zm81QKpXeLoPIJ3EGQEQkKAYAEZGgGABE
+      RIJiABARCYoBQEQkKAYAEZGgGABERIJiABARCYoBQEQkKL4Omnzemne/9HYJRD6JMwAiIkEx
+      AIiIBMUAICISFAOAiEhQDAAiIkFxF5CgOjo60NDQgIaGBgBAZGQkkpOTERcX59TPaDSiubkZ
+      qampCAkJcTmeJEkoLy9HaGgo5syZM+wYGRkZCAgIGPZ8i8WCq1evIiAgABkZGRO8OyIaCwaA
+      YCwWC3bv3o1Lly4N2z579mz8+te/hlz+YHJ47tw5nDx5Em+//TZSUlJcjnv//n3s3LkTc+fO
+      xZtvvunUZh/jnXfeQVJS0rDnFxYWoqSkBHl5eQwAoinCABBIW1sbPvroIxiNRmg0GixZsgRz
+      5sxBQEAAmpqacObMGdTW1sJmszkCYCqUlpaipKQEarUaf/3Xfz1l1yUSHQNAIPv27YPRaMTC
+      hQvxyiuvICgoyNEWHx+PnJwc1NbWws/Pb8pqunfvHr744gvI5XK89tprUCgUU3ZtItExAARR
+      U1ODa9euIT4+Hr/4xS8gk8mG7TfSMo+n2Ww2fPrppzCbzVi3bh1mz549ZdcmIu4CEsY333wD
+      AFi1apXLD/+pduTIEdTV1SE9PR3Lly/3djlEwmEACECSJDQ0NECtVmPBggXeLgcAUFtbi6NH
+      jyI0NBTbtm17bEKJSCQMAAF0dnbCarVCo9E8Fh+0ZrMZn376KWw2G7Zs2QKVSuXtkoiExGcA
+      AmhubgYAREVFuT1GcXGxy62jADAwMDDqGN988w0iIyNx+/ZtdHR0YOnSpcjKynK7JiKaGAaA
+      AHp6egAAoaGhbo8x0of/WFVVVTn9nJ+fP+Exich9DAABTJ8+HQDQ3t7u9hjbtm0bcYdQX18f
+      fvvb3444xpYtWzBz5kzo9XocP34cn376KX7zm984bUcloqnDABCAfemntbXV7TEiIyMRGRnp
+      sr2vr2/UMWbMmIGEhATMmjULd+7cQWVlJfbu3YvXXnvN7bqIyH18CCyAsLAwKBQKNDY2wmKx
+      eLscyGQyvPrqq1Cr1bh48SKKi4u9XRKRkBgAgsjMzERvby/OnDnj7VIAAEqlEr/4xS8QEBCA
+      r776CnV1dd4uiUg4DABBrF69GnK5HCdPnoTJZPJ2OQAevH5i06ZNGBwcxB//+Ed0dXV5uyQi
+      oTAABBETE4O8vDx0dXXhd7/7HW7fvj2kT2dnJw4ePAibzTZldS1evBhPP/00Ojs78ac//WlK
+      r00kOj4EFsjLL78MmUyGc+fO4Xe/+x1mz56NpKQk+Pn5oampCeXl5RgYGMCqVaum9G2gGzZs
+      wK1bt2AwGFBUVIT169dP2bWJRMYAEIi/vz+2bNmChIQE/M///A/q6upQW1vraI+OjkZeXp7T
+      20Dt/32sbwgdrt9o5/r7++Nv/uZv8C//8i84ceIE5s2bh7lz547pekTkPpkkSZK3iyDvsFqt
+      aGpqQn9/PyIjI33ylQxmsxkF7x/ydhlEPokzAIEFBAQgPj7e22UQkZfwITARkaAYAEREgmIA
+      EBEJigFARCQo7gIin2Y2m6FUKr1dBpFP4gyAiEhQDAAiIkExAIiIBMUAICISFAOAiEhQDAAi
+      IkExAIiIBMUAICISFAOAiEhQfB00+bw1737p7RKIfBJnAEREgmIAEBEJigFARCQoBgARkaAY
+      AEREguIuIB81MDCAW7duob6+Hq2trYiIiEBMTAwyMzMRGBjo1NdoNKK5uRmpqakICQlxOaYk
+      SSgvL0doaCjmzJkDALh79y6amprGVducOXMQHh7udO1HhYeHIzIyEhEREZDJZOMan4g8gwHg
+      g6qqqvDJJ5/AbDYPaQsODkZBQQHy8vIcx86dO4eTJ0/i7bffRkpKistx79+/j507d2Lu3Ll4
+      8803AQAXLlzA0aNHx1XfL3/5S2RkZDhd2xW1Wo0XX3wRixcvhlzOCSnRVGIA+Jhjx47h4MGD
+      kMlkeOqpp5Ceng6NRgOTyYSamhqcPn0aRqPRY9fLyclBVFTUkON79uxBdHQ0XnjhhSFtM2fO
+      HHJsxYoVjuM2mw2dnZ1obGzEpUuX8Pnnn+PGjRvYtGmTx+omotExAHxIXV0dioqKoFAo8Prr
+      rzt+ywaA2NhYpKen4/nnn0d7e7vHrqnRaKDRaIYc//zzzxEWFoYlS5aMaZyMjIxhZx8tLS34
+      /e9/j7NnzyIzMxNZWVkTrpmIxoZzbh9SVFQEANi6davTh//DlEol4uLiprKsCYmOjnb85n/1
+      6lUvV0MkFgaAjzAYDKitrUV8fDwWLlzo7XI8KjU1FQDQ2Njo5UqIxMIA8BENDQ0AgGXLlv3o
+      ds1YrVYAQFBQkJcrIRILA8BH2LdSDrce7+vKy8sBAElJSV6uhEgsfAjsI1paWgA8WDN3V3Fx
+      MS5duuSyfWBgwO2x3VVVVYXCwkIEBARAp9NN+fWJRMYA8BHd3d2Qy+VQKBRujzHSh/9ku3z5
+      Mu7cuQMAGBwcRHt7O65fv44bN25AJpPh1Vdf/VHObogeZwwAHzF9+nQ0NTXBZDJBpVK5Nca2
+      bdtG/CJYX18ffvvb37pb4oi+++67IcdkMhkWLlyIVatWIT4+flKuS0SuMQB8hP3LWG1tbW4H
+      QGRkJCIjI1229/X1uTXuWGzYsAFxcXHo6enB3r170dfXh3Xr1mH58uWTdk0iGhkDwEfYA6C2
+      thbJyclermb8Zs2a5Zh9TJ8+HR988AEOHDiAwMBALF261MvVEYmJu4B8REZGBmQyGU6dOoX+
+      /n5vlzMhs2fPxt///d9DoVDgyy+/HHZ5iIgmHwPAR8TGxiI3Nxfd3d04duyYt8uZsIdD4D//
+      8z9x/Phxb5dEJBwGgA9ZuXIl/Pz8cOTIEezfvx+SJDm1S5KEy5cvo6yszEsVjk9SUpIjBA4c
+      OIBvv/3W2yURCYXPAHxITEwM3nrrLXz88cc4deoUysrKkJycDI1Gg87OThgMBhiNRqxYsQJa
+      rdbb5Y6JPQQ++OADHDx4EIODg1i1apW3yyISAmcAPiYlJQXvvfcetFotrFYrLly4gIMHD+K/
+      //u/0dLSAq1WO+TD38/Pz+k/RzOWfuMda6T+SUlJ+Lu/+zsoFAocPnwYJ06cGNPYRDQxMunR
+      dQTyKW1tbTCZTFAqlVCr1QgICPB2SVPKbDaj4P1D3i6DyCdxCcjHqdVqqNVqb5dBRD6IS0BE
+      RIJiABARCYoBQEQkKAYAEZGguAuIfJrZbIZSqfR2GUQ+iTMAIiJBMQCIiATFACAiEhQDgIhI
+      UAwAIiJBMQCIiATFACAiEhQDgIhIUAwAIiJB8XXQ5PPWvPult0sg8kmcARARCYoBQEQkKAYA
+      EZGgGABERIJiABARCYq7gAgAYLPZcOXKlTH1nTVrFiIjI52OVVVVITAwECkpKY5jHR0duHHj
+      BoKCgjBv3rxRxy0vL4ckScjMzIRczt9NiCYbA4AAAFarFbt27RpT382bN+Ov/uqvnI798Y9/
+      hFqtxj/+4z86jgUGBuLPf/4zurq68MYbbyArK8vlmGfPnsUXX3yBpKQkZGZmuncTRDQuDABy
+      EhcXh+XLl4/YJykpaUxjhYSE4OWXX8bOnTuxb98+bN++fdi/3tXW1oavvvoKAQEB2LZtG3/7
+      J5oiDAByEhERgdzcXI+Nt2DBAjzxxBM4f/48CgsLsW3bNqd2SZKwZ88eWCwWbNy4EdHR0R67
+      NhGNjL9q0aTbuHEjVCoVzp8/j/Lycqe24uJiGAwGpKWlYenSpV6qkEhMDACadEqlEps3bwYA
+      7Nu3D2azGQDQ3NyMoqIiKBQKbNmyBTKZzJtlEgmHAUBTYv78+cjPz4fJZEJhYSFsNht2794N
+      q9WKl156aciuIiKafHwGQFPmpZdewrVr13D+/Hl0dXWhvr4eGRkZyM/P93ZpREJiAJCTW7du
+      obCw0GW7XC7H6tWroVAoxj22QqHA5s2bsWPHDly9ehVKpRI///nPJ1IuEU0AA4CcdHd3o7i4
+      eMQ+Tz/9tFsBAAApKSlQqVTo6OhAQkICVCqVW+MQ0cQxAMhJamoqXn311RH7hIeHuz3+0aNH
+      0dHRAQC4du0aLl68iJycHLfHIyL38SEwOQkICIBKpRrxn7tf1Lp58yaOHj2KkJAQvPHGG5DL
+      5fjLX/4Ck8nk4bsgorFgANCUGBgYwO7du2Gz2VBQUICsrCwsX74cvb292Lt3r7fLIxISA4Cm
+      xKFDh2A0GqHT6RxLPqtWrYJGo0FFRQVKSkq8XCGReBgANOnq6+tx4sQJhIWFYdOmTY7j/v7+
+      2Lp1K+RyOfbv34/29nYvVkkkHgYATar+/n589tlnkCQJmzZtQmhoqFN7QkICli9fjvv372PP
+      nj2QJMlLlRKJh7uAyMn169exc+fOEfssXboUc+fOHdN4RUVFaGlpQW5uLrRa7bB9Vq1ahStX
+      rqC6uhpnzpzBM888M96yicgNDAAC8OALXjKZDBaLZdQ/DKPT6cY05s2bN3H69GlERETgZz/7
+      mct+9qWgf/3Xf8XXX38NnU43oa2mRDQ2MolzbvJhZrMZBe8f8nYZRD6JzwCIiATFACAiEhQD
+      gIhIUAwAIiJBMQCIiATFXUDk08xmM5RKpbfLIPJJnAEQEQmKAUBEJCgGABGRoBgARESCYgAQ
+      EQmKAUBEJCgGABGRoBgARESCYgAQEQmKfxCGfN6ad7/0dglEPokzACIiQTEAiIgExQAgIhIU
+      A4CISFAMACIiQXEXkCCMRiOam5sBAMnJyQgLC3PZt7W1Fbdv30ZSUhIiIiIcx202G65cuTLq
+      tWJiYqDRaNDR0YEbN24gKCgI8+bNG/W88vJySJKEzMxMyOX83YRosjEABHHu3DmcPHkSALBk
+      yRJs2bLFZd/y8nLs378ff/u3f4sFCxY4jlutVuzatWvUa/3kJz/B+vXrERgYiD//+c/o6urC
+      G2+8gaysLJfnnD17Fl988QWSkpKQmZk5jjsjIncxAAQTFBSEH374Ac899xxmzpzp1hixsbF4
+      8cUXR2wHgJCQELz88svYuXMn9u3bh+3btw/717va2trw1VdfISAgANu2beNv/0RThAEgmJ/8
+      5Cc4fPgwDhw4gF/+8pdujREeHo7c3Nwx9V2wYAGeeOIJnD9/HoWFhdi2bZtTuyRJ2LNnDywW
+      CzZu3Ijo6Gi3aiKi8eOvWoLJyspCamoqKisrUVNTMyXX3LhxI1QqFc6fP4/y8nKntuLiYhgM
+      BqSlpWHp0qVTUg8RPcAAENBPf/pTAMCBAwcgSdKkX0+pVGLz5s0AgH379sFsNgMAmpubUVRU
+      BIVCgS1btkAmk016LUT0/xgAApo9ezays7Nx48YN6PX6Kbnm/PnzkZ+fD5PJhMLCQthsNuze
+      vRtWqxUvvfQSIiMjp6QOIvp/DABBrV27Fn5+fjh48CAGBwen5Jr2D/rz58/jww8/RH19PTIy
+      MpCfnz8l1yciZwwAQUVHR+PJJ59Ea2srzp49OyXXVCgU2Lx5M2QyGa5evQqlUomf//znU3Jt
+      IhqKu4AEtmrVKvzwww84cuQIFi9eDIVCMabzbt++jY8++shl+8qVK5GYmDhsW0pKClQqFTo6
+      OpCQkACVSuVO6UTkAQwAgYWFhTm2hR4/fhxr1qwZ03m9vb2oqKhw2f7kk0+6bDt69Cg6OjoA
+      ANeuXcPFixeRk5MzvsKJyCMYAIJ7/vnncebMGXz33Xd45plnnF794EpaWhp+9atfjftaN2/e
+      xNGjRxESEoKtW7fiD3/4A/7yl78gNTV1TNclIs/iMwDBBQUFYfXq1ejv78fhw4cn7ToDAwPY
+      vXs3bDYbCgoKkJWVheXLl6O3txd79+6dtOsSkWsMAEJ+fj5iYmJQUlKCpqamSbnGoUOHYDQa
+      odPpHEs+q1atgkajQUVFBUpKSiblukTkGgOAIJfLsW7dOthsNhQVFXl8/Pr6ekOUqHkAAAvC
+      SURBVJw4cQJhYWHYtGmT47i/vz+2bt0KuVyO/fv3o7293ePXJiLXGAAEANBqtUhKSsLly5dR
+      V1fnsXH7+/vx2WefQZIkbNq0CaGhoU7tCQkJWL58Oe7fv489e/ZMyTeTiegBBgA5rF+/HgA8
+      +u3goqIitLS0IDc3F1qtdtg+9qWg6upqnDlzxmPXJqKRMQAE4efn5/Sfw0lOTnZ6//+jfeVy
+      OWQy2YhjPOzmzZs4ffo0IiIi8LOf/cxlv4eXgr7++mt0dXWNaXwimhiZxDk3+TCz2YyC9w95
+      uwwin8QZABGRoBgARESCYgAQEQmKAUBEJCg+BCafZjabh/1D80Q0Os4AiIgExQAgIhIUA4CI
+      SFAMACIiQTEAiIgExQAgIhIUA4CISFAMACIiQTEAiIgE5e/tAogmas27X3q7BCKfxBkAEZGg
+      GABERIJiABARCYoBQEQkKAYAEZGguAtIIHV1dejr60NGRsaI/fr6+lBdXY0ZM2YgNjZ2xL4G
+      gwGVlZUAAJ1Oh8TExBH7G41GNDc3IzU1FSEhIeOqn4g8izMAgRw5cgQffvgh7t+/P2K/xsZG
+      7Nq1CxcuXBh1zGPHjuH48eM4fvw4vvvuu1H7nzt3Drt27YLRaBxz3UQ0OTgDILf19vbi2rVr
+      SE1NRWdnJ8rLy2G1WhEQEODt0ohoDDgDILddvnwZNpsNixYtQnZ2NiwWCyoqKrxdFhGNEQOA
+      3FZaWgqZTAatVovs7GwAgF6v93JVRDRWXAIit/T09KC6uhopKSkIDw9HeHg4oqKiUFFRgf7+
+      fgQGBnq7RCIaBWcA5JaysjLYbDbodDrHMZ1OB4vF4tgVRESPNwYAuUWv10MmkzkFgH0ZqLS0
+      1FtlEdE4MABo3Hp6elBTU4M5c+YgIiLCcTwhIQGRkZGOZSAierwxAGjchlv+sdPpdOjv7+du
+      ICIfwACgcbPv/nEVAPY+RPR44y4ggchkMgCAJEkj9rPZbC7buru7YTAY4O/vj8OHDw9pt49d
+      WVkJi8WCoKCgCVRMRJOJASCQ0NBQAEBnZyeCg4Nd9uvs7AQAhIeHD2mzL//YbDaUlJS4HMO+
+      DLRo0aIJVk1Ek4UBIJCoqCgAQEtLy4gveWttbQUAREdHD2mzf9Fr+/btmDZt2rDnNzQ0YMeO
+      HdDr9QwAoscYnwEIJCYmBgBw9uxZl32sVit++OEHAMCMGTOc2uzLP4mJiYiNjYVCoRj2X3p6
+      OlQqFSoqKmCxWCbvhohoQhgAAtFqtYiKikJlZSW+//77Ie2Dg4P46quvcO/ePWi1WkRGRjq1
+      25d/7Pv9XbG/HsJqtaK8vNyj90BEnsMlIIH4+/tj48aN+Oijj7Bv3z6UlZVh/vz5UKlUaGlp
+      gV6vR2NjI4KCgvDSSy8NOd++s2e43T+Pys7OxunTp6HX65GTkzOkvaioyPFM4lFr166FRqMZ
+      590R0XgxAASTmZmJX//619i7dy+qqqpQVVXl1D537ly8/PLLQ3777+vrg8FgwKxZs6BWq0e9
+      TnJyMsLDw1FZWYnBwUH4+fkBAOTyB5POuro6l+fm5+czAIimgEwabU8g/ShJkoTW1lbcvXsX
+      JpMJkZGRmDFjxpAP/sed2WxGwfuHvF0GkU/iDEBQMpkM0dHRw+70ISIx8CEwEZGgGABERIJi
+      ABARCYoBQEQkKO4CIp9mNpuhVCq9XQaRT+IMgIhIUAwAIiJBMQCIiATFACAiEhQDgIhIUAwA
+      IiJBMQCIiATFACAiEhQDgIhIUHwdNPm8Ne9+6e0SiHwSZwBERIJiABARCYoBQEQkKAYAEZGg
+      GABERILiLiAfYDQa0dzcjMTEREybNs1lv8rKSlitVkRGRmLWrFku+9XV1aG3txeZmZmQyWRO
+      1wCA8PBwzJkzZ0y12a8JAElJSYiIiBi29kcFBgYiJCQEMTExCA4OHtO1iMizGAA+oK6uDvv2
+      7cOKFSuwbt26Yft0d3fjP/7jPyBJEmbPno3f/OY3Lsf705/+hL6+Pvz7v/+7IwDOnTuHkydP
+      AgBCQkLw+9//Hn5+fiPWde/ePXz44YeOnzds2IBly5Y59Xl43OEEBARg4cKFePbZZ5GUlDTi
+      9YjIsxgAPiAtLQ0AYDAYXPapqamBJEkICAjAzZs3cf/+fSgUiiH92tra0NHRgYyMDMjlQ1cA
+      Z86ciTt37uDatWvIyMgYsa7S0lIAQGJiIm7cuDFi39WrVyM6OhoAIEkSzGYzTCYTrly5gosX
+      L+LKlSt45513EBcXN+I4ROQ5fAbgA6KjozFt2jTcvHkT/f39w/apqakBACxduhQ2mw21tbXD
+      9rOHSGpq6rDty5cvBwBcuHBh1LpKS0vh7++PJ598ctS+8+bNQ25uLnJzc5GXl4elS5di7dq1
+      +Kd/+iesWbMG/f39OHLkyKjjEJHnMAB8RFpaGgYHB1FXVzdse3V1NWJiYrB48WLHz8OxB4N9
+      VvGo2NhYxMfH4/Lly461/eG0tLTg1q1byMrKmvDf5H3hhRcQFBSE27dvT2gcIhofBoCPGGkZ
+      qL29HS0tLUhPT0dsbCzCwsIcM4JHGQwGKBSKER8S5+bmwmKxoLy83GUf+/JPbm7ueG5jWJIk
+      AQAGBgYmPBYRjR0DwEfYA2C4pR37b/vp6emQyWRIS0vD7du3YTabnfp1dHSgra0NKSkpw67/
+      2+Xk5EAmk+HixYsu+5SWliI4OBiZmZnu3M6QsSwWCx8CE00xBoCPiIyMhFqtRkNDw5Clmerq
+      ascHP/AgCCRJGjILsIeHq/V/u2nTpiElJQUVFRXo6+sb0n737l3cuXMHOp0O/v7u7yPo6enB
+      iRMn8NlnnyE6OhoFBQVuj0VE48ddQD4kLS0NJSUlaGhocPoQr6mpQVxcHEJCQhz97Me1Wq2j
+      n335yNX6/8Nyc3NhMBhQVlaGJUuWOLW5s/zz7bffQq1WY2BgAN3d3TCZTLh58yYkScK8efNQ
+      UFCA0NDQMY9HRBPHGYAPGe45QFNTEzo7OzF37lzHMfuuoUdnAAaDAcHBwSOu/9tlZ2fD399/
+      2GWg0tJSqFSqMQWJXXl5OYqLi3H27FmUlZWhvr4eg4ODSExMxOLFixEWFjbmsYjIMzgD8CHD
+      BcDD6/+P9j1//jy6u7sRFhaGrq4uNDc3Iysry/Hlr5EolUrMnz8fFRUVjjEA4Pbt22hqasJz
+      zz03pnHs3njjDcyaNQuSJKGvrw89PT0wGo24dOkSPvnkE0RFReHNN99EZGTkmMckoonhDMCH
+      qFQqxMTEoL6+3rFjprq6Gv7+/khOTnbqaw8E+yxgtO2fw8nLy4PNZoNer3ccc3f3T2hoKFQq
+      FaZNmwaNRoPU1FQ888wz+NWvfoVXXnkF9+7dwwcffDCuMYloYhgAPiYtLQ1WqxU3btyAJEkw
+      GAyYPXs2goKChvQDJhYAWVlZUCgUTl8KKy0tRUxMDBISEiZ6Kw65ubmYP38+mpubce/ePY+N
+      S0QjYwD4mIeXgRobG9Hb2ztk+QcApk+fjqioKEcAGAwGKJXKcb1qISAgAFqtFvX19Whvb8fN
+      mzfR2tqKvLw8z9zMI/UCD3YYEdHUYAD4mIcDwNX6v116ejqam5tx584dGI1GpKSkjGvdHnjw
+      27kkSbh48aJHv/z1MJvN5viGc1RUlEfHJiLX+BDYx4SFhUGj0aC+vh6SJCEoKAizZ88etm9a
+      Whq+//57fPPNN5AkaVzLP3bp6ekIDw/HhQsX0NfXh9mzZ3v0Q7qjowMHDhxAY2MjNBoNYmJi
+      PDY2EY2MAeCD0tLScPr0aVRXVyMjI8Pla5vtH/hlZWVOP4+HXC7HokWLUFxcDAB47rnn3Kr5
+      4MGDju8pAMD9+/fR0dGBlpYWDA4OIiQkBK+//rpbYxORexgAPsgeAIDr5R/gwR92iY2Nxd27
+      dxESEoKZM2e67GsPkeHCJC8vD8XFxY4wcHXuSOM++p0Ef39/qFQqJCUlITMzE08//fSwr68m
+      oskjk+xv4iLyQWazGQXvH/J2GUQ+iQ+BiYgExQAgIhIUA4CISFD/B0BCkGgW2STYAAAAAElF
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='384' name='Risky Company-Years by Year' width='384'>
+      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
+      tLK5BRO+fyfjW19bqkQy4/s6uaB6cYnvj0k0bPNzMgErp+ExsTx3xj0mlhfAdZmO41x2NZBt
+      2xwamkEcx1EoFAp6DHyO67qcP5thcuHnJJA9gFAolL3jMpmMLMu66u/IXJLJZHg8ZhDP83Ji
+      Y5NLPM/LiZ8TnlIAgKECOQQEAAgeewATkE6nNTIyItd1JV08LjsyMqJM5l8nPz3PUzKZzP7+
+      0t+ZjhOxpnEc57L73/M8Xbhw4bL7/4uPRyaT0fDwMI+HT774mEjS6OioEolE9vdffEwufSwe
+      j/NWMT5wXVcXLlxQKpXKfiwWiykejwdzDuBqdPLkSR0+fFiFhYVKp9O644479Pbbb8txHA0O
+      DmrLli2KxWLas2ePHMfRli1bNDw8rL/+9a8qLi5Wf3+/7rnnHuXn5wd9U3JCb2+v9uzZo+Li
+      Yg0NDenuu+9Wc3Ozuru7NTo6qsbGRuXn5+sf//iHurq69OMf/1jpdFqvvPKKSktL1dXVpU2b
+      NqmkpCTom5IzhoaG9Le//e2y7/cTJ06ora1NiURCt9xyi0pLS/XOO++otbVV27Zty37ukSNH
+      9P777+tnP/tZgLcg98RiMb322msqLi5WT0+P7rnnHnV1dam5ufnieaXHHnvssaCHvBrk5eVp
+      7dq1WrVqlQ4fPqyVK1eqtbVVmzZtkm3b6uvrU35+vqqqqvTZZ5+ptrZWlmXpuuuu07XXXqvB
+      wUEVFhZq9uzZQd+UnGDbttasWaNVq1apo6NDixYt0oEDB3T33Xdr/vz5amlp0YIFC1ReXq6+
+      vj7V1tbKtm3V1taqsrJSY2Njsm1bpaWlQd+UnPH57/eBgQHNnj1bhw4d0p133qnly5frwIED
+      WrZsmebMmaOhoSHV1tZKksbGxtTU1KSioqLszw2mzqpVq1RTU6NkMinP89Tc3KzNmzdf/JkI
+      erirRVFRkVKplF5//XWtWrUq+yZ3lmXpmmuuUX9/v8rLyzV37tzs50SjUUUiER04cEAjIyNa
+      uHBhgLcgt+Tn58uyLO3du1fRaFSFhYWaNWuWLMvS3LlzFYvFNGfOHC1YsCD7OZZl6dSpU/rD
+      H/6g06dPa8WKFQHegtxz6fv9gw8+0OjoqMrLyxUOhxUOh1VQcPH1KIWFhVq0aFH2czzP05tv
+      vqmNGzcGOHnuikQiikaj+uijj9TZ2anly5dL+tdjRQDGKRaL6aWXXtLatWtVX1+vSCSSPaYW
+      i8U0a9asKz7HdV29/vrrsm1bmzdv5jruKeQ4jl5++WXNnz9f3//+9xUKhbLHndPptMLhLz+6
+      WVlZqS1btqi0tFQnT56czpFznuu6eu211xQOh3X77bfLtu3sG0E6jvOlz+w7OjrU19enQ4cO
+      qbOzUy0tLQFMnrs8z9Nbb72lsbEx3X333bJtO/vGnFJArwO4GjU1NWnlypXKy8tTT0+PysrK
+      NDAwoO7ubn3wwQe65ZZbNDo6qlgsplgspr6+Po2NjSmRSGjp0qXq7u7WvHnzlJeXF/RNyQmt
+      ra0qLCzUvHnz1N3drfnz58uyLHV2dur48eNavny54vG4Lly4oFgspt7eXnmep8HBQS1cuFDR
+      aPSyE5P46jo7O5VKpbRkyZLs93t+fr7a2trU29urxYsXK5lManh4OPuYzJ8/Xw888IAkqaur
+      S9XV1QHfitxyaRt12223qaenRyUlJZo3b56OHTt2McpcBjo+7e3t6unpkXTx+HNDQ4POnz+v
+      I0eOaOnSpVq5cqVOnz6t7u5uua6rSCSipUuX6tSpU9lnPqtXr+YcwBTp7u5We3t79r5dt26d
+      PM9TU1OTSkpKVFdXp/7+frW3t2dfRXvdddepra1NQ0NDKisr0+rVq9krm0IDAwM6fvz4Zd/v
+      eXl5+vDDD1VQUKB169ZpeHhYx48fzz4mNTU1Ki4uliR99tlnqqio4BzAFBoZGdGxY8ey9+m1
+      116roqIiHTx4ULZt6/8DPpvqvaTxmdQAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
